@@ -7,10 +7,9 @@ require_relative './class_methods_module.rb'
 #   has a name (FAILED - 9)
 #   extends the MetaDancing module (FAILED - 10)
 
-
 class Kid
-  extend MetaDancing
-  include Dance
+  extend FancyDance::ClassMethods
+  include FancyDance::InstanceMethods
 
   attr_accessor :name
 
